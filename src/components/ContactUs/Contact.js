@@ -4,7 +4,7 @@ import GoogleMaps from './GoogleMaps';
 
 const Contact = () => {
     return (
-        <div className="text-center">
+        <div className="text-center m-4">
             <h1 className="bg-info">Contact Me</h1>
             <div className="row">
             <div className="col-md bg-light mx-5">

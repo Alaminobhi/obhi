@@ -3,7 +3,7 @@ import resume from '../Resume/Resume.pdf'
 
 const Resume = () => {
     return (
-        <div>
+        <div className="m-4">
             <h1 className="bg-info text-center">Resume File</h1> <a className="btn btn-success text-right mb-2 mx-3" href={resume} download>
                Resume download
                </a>

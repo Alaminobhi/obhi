@@ -16,7 +16,7 @@ import Projects from './components/Projects/Projects';
 import Footer from './components/Footer';
 import Alamin from './components/Alamin/Alamin';
 import Header from './components/Header/Header';
-import ProjectDetails from './components/Projects/ProjectDetails';
+import ProjectDetails from './components/Blogs/ProjectDetails';
 export const UserContext = createContext();
 
 function App(props) {
@@ -45,9 +45,6 @@ function App(props) {
         <Route path="/projects">
           <Projects></Projects>
         </Route>
-        {/* <Route path="projectDetails/:id">
-          <ProjectDetails></ProjectDetails>
-        </Route> */}
         <Route path="/projectDetails/:id">
          <ProjectDetails></ProjectDetails>
         </Route>

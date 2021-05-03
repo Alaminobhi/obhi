@@ -9,9 +9,10 @@ const Header = () => {
         <section className="container headerMain">
         <div className="row align-items-center text-center">
           <div className="col-md-6">
-            <h4 className="text-center text-uppercase text-shadow">ASSALAMU ALIKUM</h4>
+            <h4 className="text-center text-uppercase text-shadow">AL-AMIN OBHI</h4>
+            <p><b>alaminobhi2@gmail.com <br/> 01744891919 </b></p>
             <ReactTypingEffect
-        text={["Web Developer", "AL-AMIN OBHI"]}
+        text={["Web Developer", "AL-AMIN OBHI", "React js, Node js"]}
         cursorRenderer={cursor => <h1>{cursor}</h1>}
         displayTextRenderer={(text, i) => {
           return (

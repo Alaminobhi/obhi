@@ -11,19 +11,19 @@ const ProjectDetails = () => {
             .then(res => res.json())
             .then(data => setProject(data))
     }, [id])
-    const { title, code, live, description, img, technology} = project;
+    const { title, live, description, img, technology} = project;
     return (
         <div>
-            <div className="card bg-light mb-2 p-3" >
+            <div className="card bg-light m-5 p-3" >
                 <img className="img-fluid" src={img} alt="projectImage" />
                 <div className="card-body">
                     <h3 className="card-text projectName text-center">{title}</h3>
-                    <div className='d-flex align-items-center justify-content-center project-link'>
-                        <a href={code} className='p-2 m-1 btn-success rounded' rel="noreferrer" target='_blank'>GitHub Code</a>
-                        <a href={live} className='p-2 m-1 btn-success rounded' rel="noreferrer" target='_blank'>Live Site</a>
-                    </div>
                     <div className="text-info text-center">{technology}</div>
                     <div className="text-center">{description}</div>
+                    <div className='text-center'>
+                    <iframe href={live} width="100%" height="100%">
+                  </iframe>
+                    </div>
                 </div>
             </div>
         </div>
