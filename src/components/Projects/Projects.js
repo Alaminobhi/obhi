@@ -16,7 +16,7 @@ const [projectsData, setProjectsData] = useState([]);
 
   return (
     <div
-      className="mt-5 container">
+      className="mt-5 m-4">
         <h1 className="text-center text-uppercase bg-secondary">
           Projects
         </h1>

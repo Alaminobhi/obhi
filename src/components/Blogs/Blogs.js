@@ -12,11 +12,11 @@ const Blogs = () => {
     }, [])
 
     return (
-        <section className="mt-5 bg-light">
+        <section className="mt-5 m-4">
             <div className="text-center bg-secondary">
-            <h1 style={{color: '#1CC7C1'}}>Web Development Blogs </h1><hr/>
+            <h1 style={{color: '#1CC7C1'}}>Blogs </h1><hr/>
             </div>
-            <div className="row m-2">
+            <div className="row">
                 {
                     blogData.map(data => <BlogList key={data._id} data ={data}></BlogList>)
                 }

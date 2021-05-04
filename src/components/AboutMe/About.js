@@ -1,7 +1,7 @@
 import React from 'react';
 import { ProgressBar } from "react-bootstrap";
 import ReactTypingEffect from 'react-typing-effect';
-import myI from '../../Images/image 1-2.png'
+import myI from '../../Images/logoimg.png'
 const About = () => {
     const javaScript = 95;
     const react = 95;
@@ -13,42 +13,26 @@ const About = () => {
     const Heroku = 97;
     const Firebase = 96;
     const ReactRedux = 60;
+
+
     return (
-        <div className="text-center bg-white mx-4">
-            <h1 className="bg-info">About</h1>
-            <div className="bg-secondary m-2">
+        <div className="text-center bg-info mx-4">
+            <h1 className="bg-secondary">About</h1>
+            <div className="m-2">
                 <h3 className="text-danger">Al-Amin Obhi</h3>
-                <div className="d-flex justify-content-evenly">
-                <p className="m-4">
-                <ReactTypingEffect
-        text={["Web Developer", "Hello, I am a professional web developer, Javascript, React js, Node js, Express js, Mongodb ETC."]}
-        cursorRenderer={cursor => <h1>{cursor}</h1>}
-        displayTextRenderer={(text, i) => {
-          return (
-            <h1>
-              {text.split('').map((char, i) => {
-                const key = `${i}`;
-                return (
-                  <span
-                    key={key}
-                    style={i%2 === 0 ? { color: 'magenta'} : {}}
-                  >{char}</span>
-                );
-              })}
-            </h1>
-          );
-        }}        
-      />
-                </p>
-                <p className="m-3">
-                <img className="img-fluid" src={myI} alt=""/> 
-                </p>
+                <div className="d-flex justify-content-center">
+                    <p className="m-3">
+                        <img className="img-circle bg-light rounded shadow" style={{height: "300px"}} src={myI} alt="" />
+                    </p>
+                    <p className="m-4 bg-light shadow rounded text-center">I am a Full Stack Web Developer. <br/> A HTML,CSS,JavaScript, React js, Node js & MongoDB
+                    expert. <br/> I always maintain a good relationships with my Team Members.
+                    </p>
                 </div>
             </div>
-            <h2 className="text-success text-center">Programing Skills</h2>
-            <div className="row m-3 align-items-center">
+            <h2 className="text-success bg-secondary text-center">Technical Skills</h2>
+            <div className="row mt-1 mx-3 align-items-center">
                 <div className="col-md-6">
-                    <div className='skillProgress m-5'>
+                    <div className='skillProgress rounded shadow mt-2 mx-5 bg-light'>
                         <h4>JavaScript</h4>
                         <ProgressBar
                             className="mb-3"
@@ -97,7 +81,7 @@ const About = () => {
                     </div>
                 </div>
                 <div className="col-md-6">
-                    <div className='skillProgress m-5'>
+                    <div className='skillProgress bg-light rounded-lg mt-2 mx-5 shadow'>
                         <h4>NodeJS</h4>
                         <ProgressBar
                             className="mb-3"

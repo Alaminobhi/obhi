@@ -8,13 +8,13 @@ import Blogs from '../Blogs/Blogs';
 
 const Home = () => {
     return (
-        <div className="bg-light m-1">
+        <div className="m-2">
         <Header></Header>
         <About></About>
         <Projects></Projects>
         <Resume></Resume>
-        <Contact></Contact>
         <Blogs></Blogs>
+        <Contact></Contact>
         </div>
     );
 };

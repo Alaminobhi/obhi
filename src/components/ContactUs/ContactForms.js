@@ -15,15 +15,13 @@ export default function ContactUs() {
   }
 
   return (
-    <form className="contact-form" onSubmit={sendEmail}>
-      <input type="hidden" name="contact_number" />
-      <label>Name</label>
-      <input type="text" name="user_name" placeholder="Your Name" /><br/>
-      <label>Email</label>
-      <input type="email" name="user_email" placeholder="Your Email" /><br/>
-      <label>Message</label>
-      <textarea name="message" placeholder="Message Text Here" /><br/>
-      <input className="btn btn-success" type="submit" value="Send" />
-    </form>
+    <div className="">
+      <form className="contact-form" onSubmit={sendEmail}>
+        <input type="text" name="user_name" placeholder="Your Name" /><br /><br/>
+        <input type="email" name="user_email" placeholder="Your Email" /><br /><br/>
+        <textarea name="message" placeholder="Message Text Here" /><br />
+        <input className="btn btn-success" type="submit" value="Send" />
+      </form>
+    </div>
   );
 }
