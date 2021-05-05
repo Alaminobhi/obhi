@@ -1,7 +1,7 @@
 import React from 'react';
 import './Header.css';
 import me from '../../Images/alamin.png';
-import resume from '../Resume/Resume.pdf';
+import resume from '../../Images/Resume Al-Amin Obhi.pdf'
 import ReactTypingEffect from 'react-typing-effect';
 
 const Header = () => {

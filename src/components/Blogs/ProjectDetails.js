@@ -21,7 +21,7 @@ const ProjectDetails = () => {
                     <div className="text-info text-center">{technology}</div>
                     <div className="text-center">{description}</div>
                     <div className='text-center'>
-                    <iframe href={live} width="100%" height="100%">
+                    <iframe src={live} width="100%" height="100%">
                   </iframe>
                     </div>
                 </div>
